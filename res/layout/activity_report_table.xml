@@ -1,0 +1,350 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_bar_bg" >
+
+                 <ImageView
+		            android:id="@+id/iv_logo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="8dp"
+		            android:layout_marginRight="8dp"
+		            android:src="@drawable/logo_yunpan_home" />
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@id/iv_logo"
+		            android:text="@string/tv_vechicle_check"
+		            android:textColor="@color/white" />
+		        <Button
+		            android:id="@+id/next"
+		            android:layout_width="wrap_content"
+		            android:layout_height="30dp"
+		            android:clickable="true"
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="8dp"
+		            android:text="拍照"
+		            android:textColor="@android:color/white"
+		            android:background="@drawable/btn_male_bg" />
+		        
+            </RelativeLayout>
+            
+              <LinearLayout 
+                 android:id="@+id/ll_toolbar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:paddingTop="5dp"
+                 android:gravity="center"
+                 android:layout_gravity="center"
+                 android:background="@color/white">
+		        
+            	
+            	
+            	<ImageView
+		            android:id="@+id/scan"
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:clickable="true"
+		            android:scaleType="fitXY"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="20dp"
+		            android:src="@drawable/tiaoma" />
+            	
+            	<Button android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:onClick="announcement"
+	                android:background="@drawable/button_nor" 
+	                android:padding="3dp"
+	                android:layout_margin="3dp"
+	                android:text="公告信息"/>
+            	
+            	<Button 
+            	    android:id="@+id/waitverify"
+            	    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:onClick="waitVerify"
+	                android:background="@drawable/button_nor" 
+	                android:padding="3dp"
+	                android:layout_marginLeft="20dp"
+	                android:text="待授权信息"
+	                android:visibility="gone"/>
+            	
+            	
+            	<Button 
+            	    android:id="@+id/btn_chassis"
+            	    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:onClick="chassisInfo"
+	                android:background="@drawable/button_nor" 
+	                android:padding="3dp"
+	                android:layout_marginLeft="20dp"
+	                android:text="底盘公告"
+	                android:visibility="gone"/>
+             </LinearLayout> 
+           
+            <ScrollView 
+                android:id="@+id/scrollview"
+                android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:visibility="visible"
+				    android:background="@drawable/newbg">
+            
+		     <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                 android:paddingBottom="20.0dip" > 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:text="基本信息"
+                android:textColor="#ff383838" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/report_bg_circle"
+                android:orientation="vertical"
+                android:visibility="visible" >
+                
+                <LinearLayout
+                    android:id="@+id/insptype"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/icon_setting" />
+
+                    <TextView
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"                     
+                        android:text="业务类型"
+                        android:textColor="@color/ash" />
+                    
+                    <TextView
+                        android:id="@+id/tvInsptype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:text="请选择业务类型"
+                        android:textColor="#ff8e8e8e"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/about_arrow" />
+                </LinearLayout>
+                
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8000001dip"
+                    android:background="#ffe5e0d8" />
+
+                <LinearLayout
+                    android:id="@+id/ll_clsbdh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/more_bell" />
+
+                    <TextView
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="VIN号码"
+                        android:textColor="@color/ash" />
+                    
+                    <EditText
+                    android:id="@+id/et_clsbdh"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:layout_marginRight="5.0dip"
+                    android:hint="请输入"
+                    android:maxLength="42"
+                    android:singleLine="false"
+                    android:textColor="#ff8e8e8e"
+                    android:textSize="16.0sp" />
+                </LinearLayout>
+                
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8000001dip"
+                    android:background="#ffe5e0d8" />
+
+                <LinearLayout
+                    android:id="@+id/ll_hphm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60.0dip"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_circle"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/more_bell" />
+
+                    <TextView
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="号牌号码"
+                        android:textColor="@color/ash" />
+                    
+                    <EditText
+	                    android:id="@+id/add_car_number"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_marginRight="5.0dip"
+	                    android:enabled="false"
+	                    android:hint="请选择"
+	                    android:maxLength="42"
+	                    android:singleLine="false"
+	                    android:background="@null"
+	                    android:digits="0123456789abcdefghijgklmnopqrstuvwxyzABCDEFGHIJGKLMNOPQRSTUVWXYZ苏沪浙皖赣粤京闽湘津鲁豫冀晋蒙辽吉黑鄂桂琼渝川蜀贵黔云藏陕秦甘陇青宁新"
+	                    android:textColor="#ff8e8e8e"
+	                    android:textSize="16.0sp" />
+                    
+                    <Button
+                        android:id="@+id/btn_inusecar"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="right|center_vertical"
+			            android:layout_marginRight="3.0dip"
+			            android:onClick="inUseCarInfo"
+			            android:background="@drawable/search_icon"
+		            />
+
+                </LinearLayout>
+                
+                
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8000001dip"
+                    android:background="#ffe5e0d8" />
+
+                <LinearLayout
+                    android:id="@+id/lictype"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/account" />
+
+                    <TextView
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="号牌种类"
+                        android:textColor="@color/ash" />
+
+                    <TextView
+                        android:id="@+id/tvLictype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请选择号牌种类"
+                        android:textColor="#ff8e8e8e"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/about_arrow" />
+                </LinearLayout>
+                
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8000001dip"
+                    android:background="#ffe5e0d8" />
+                
+                <LinearLayout
+                    android:id="@+id/ll_useproperties"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/icon_transfer" />
+
+                    <TextView
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="使用性质"
+                        android:textColor="@color/ash" />
+                    
+                    <TextView
+                        android:id="@+id/tv_useproperties"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:text="请选择使用性质"
+                        android:textColor="#ff8e8e8e"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/about_arrow" />
+                </LinearLayout>
+                
+            </LinearLayout>
+            
+            
+            
+
+          	<include layout="@layout/report_check_item"/>
+          	
+          </LinearLayout>
+          </ScrollView>
+
+    </LinearLayout>
+

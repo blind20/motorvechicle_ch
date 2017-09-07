@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="1dp"
+    android:gravity="center">
+    <FrameLayout android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:gravity="center">
+	 <ImageView 
+	     android:id="@+id/ivPhoto"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_gravity="center"
+	     android:scaleType="center"
+	     android:src="@drawable/add1"
+	     />
+	<ImageView 
+	     android:id="@+id/iv_del"
+	     android:layout_width="20dp"
+	     android:layout_height="20dp"
+	     android:layout_gravity="top|right"
+	     android:scaleType="fitXY"
+	     android:src="@drawable/del"
+	     android:visibility="visible"
+	     />
+	</FrameLayout>
+ 
+    <TextView
+      android:id="@+id/tv_note"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="visible"
+      android:text="补拍"
+      android:textColor="#ff383838" />
+
+</LinearLayout>

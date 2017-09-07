@@ -1,0 +1,224 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/newbg"
+         >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_bar_bg" >
+
+                 <ImageView
+		            android:id="@+id/iv_back"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="8dp"
+		            android:layout_marginRight="8dp"
+		            android:src="@drawable/ic_back" />
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:text="@string/tv_settings"
+		            android:textColor="@color/white" />
+		        
+            </RelativeLayout>
+            
+            <ScrollView android:layout_width="fill_parent"
+				    android:layout_height="wrap_content">
+            
+		     <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                 android:paddingBottom="20.0dip" > 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:text="系统设置"
+                android:textColor="#ff383838" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/report_bg_circle"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+
+                <LinearLayout
+                    android:id="@+id/ll_apply_units"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="应用单位"
+                        android:textColor="@color/ash" />
+                    <TextView
+                        android:id="@+id/tv_apply_units"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请选择"
+                        android:visibility="gone"
+                        android:textColor="@color/ash" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/about_arrow" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8000001dip"
+                    android:background="#ffe5e0d8" />
+                
+                <LinearLayout
+                    android:id="@+id/server_set"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="服务器设置"
+                        android:textColor="@color/ash" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/about_arrow" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8000001dip"
+                    android:background="#ffe5e0d8" />
+                
+                 <LinearLayout
+                    android:id="@+id/station_set"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+
+                    <TextView
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="检测站设置"
+                        android:textColor="@color/ash" />
+                    
+                    <TextView
+                        android:id="@+id/tv_checkstation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请选择"
+                        android:visibility="gone"
+                        android:textColor="@color/ash" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/about_arrow" />
+                </LinearLayout>
+                
+                  <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8000001dip"
+                    android:background="#ffe5e0d8" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:text="设备串号"
+                        android:textColor="@color/ash" />
+
+                    <TextView
+                        android:id="@+id/tv_imei"
+                        android:layout_marginLeft="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMEI码"
+                        android:textColor="#FF8135" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8000001dip"
+                    android:background="#ffe5e0d8" />
+
+                <LinearLayout
+                    android:id="@+id/ll_location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:text="定位工具"
+                        android:textColor="@color/ash" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:background="@drawable/wb_item_lbs" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="经纬度"
+                        android:visibility="gone"
+                        android:textColor="@color/ash" />
+                </LinearLayout>
+                
+            </LinearLayout>
+
+          </LinearLayout>
+          </ScrollView>
+
+    
+         
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="3dp"
+             android:background="@drawable/btn_add_accounts"
+             android:onClick="initialDevice"
+             android:textColor="@color/white"
+             android:text="设备初始化" />
+
+    </LinearLayout>
+

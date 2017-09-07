@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="车型公告编号"/>
+        <TextView
+            android:id="@+id/tv_clggbh"
+            style="@style/gonggao_textview2"
+            android:text="车型公告编号"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="照片数"/>
+        <TextView
+            android:id="@+id/tv_zps"
+            style="@style/gonggao_textview2"
+            android:text="照片数"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="公告发布日期"/>
+        <TextView
+            android:id="@+id/tv_ggrq"
+            style="@style/gonggao_textview2"
+            android:text="公告发布日期"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="公告生效日期"/>
+        <TextView
+            android:id="@+id/tv_ggsxrq"
+            style="@style/gonggao_textview2"
+            android:text="公告生效日期"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="停止生产日期"/>
+        <TextView
+            android:id="@+id/tv_tzscrq"
+            style="@style/gonggao_textview2"
+            android:text="停止生产日期"
+             />
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout"
+        android:gravity ="top">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="合格证轮距"/>
+        <TextView
+            android:id="@+id/tv_hgz_lj"
+            style="@style/gonggao_textview2"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="轮距"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout"
+        android:gravity ="top">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="合格证轴距"/>
+        <TextView
+            android:id="@+id/tv_hgz_zj"
+            style="@style/gonggao_textview2"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="轴距"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:gravity ="top">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="备注"/>
+        <TextView
+            android:id="@+id/tv_bz"
+            style="@style/gonggao_textview2"
+             android:scrollbars="vertical"
+            android:text="备注"
+             />
+    </LinearLayout>
+    
+</LinearLayout>

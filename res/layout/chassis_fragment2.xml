@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey2"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" 
+        android:layout_height="60dp">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="轮胎规格"/>
+        <TextView
+            android:id="@+id/tv_ltgg"
+            style="@style/gonggao_textview2"
+            android:text="轮胎规格"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="前轮距"/>
+        <TextView
+            android:id="@+id/tv_qlj"
+            style="@style/gonggao_textview2"
+            android:text="前轮距"
+             />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="后轮距"/>
+        <TextView
+            android:id="@+id/tv_hlj"
+            style="@style/gonggao_textview2"
+            android:text="后轮距"
+             />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="外廓尺寸"/>
+        <TextView
+            android:id="@+id/tv_wkcc"
+            style="@style/gonggao_textview2"
+            android:text="外廓尺寸"
+             />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="总质量"/>
+        <TextView
+            android:id="@+id/tv_zzl"
+            style="@style/gonggao_textview2"
+            android:text="总质量"
+             />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="整备质量"/>
+        <TextView
+            android:id="@+id/tv_zbzl"
+            style="@style/gonggao_textview2"
+            android:text="整备质量"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="准牵引总质量"/>
+        <TextView
+            android:id="@+id/tv_zqyzl"
+            style="@style/gonggao_textview2"
+            android:text="准牵引总质量"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" 
+        android:layout_height="50dp">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="发动机型号"/>
+        <TextView
+            android:id="@+id/tv_fdjxh"
+            style="@style/gonggao_textview2"
+            android:text="发动机型号"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="排量"/>
+        <TextView
+            android:id="@+id/tv_pl"
+            style="@style/gonggao_textview2"
+            android:text="排量"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="功率"/>
+        <TextView
+            android:id="@+id/tv_gl"
+            style="@style/gonggao_textview2"
+            android:text="功率"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="识别代号序列"/>
+        <TextView
+            android:id="@+id/tv_sbdh"
+            style="@style/gonggao_textview2"
+            android:text="识别代号序列"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="批次"/>
+        <TextView
+            android:id="@+id/tv_pc"
+            style="@style/gonggao_textview2"
+            android:text="批次"
+             />
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

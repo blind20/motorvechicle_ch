@@ -1,0 +1,82 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/newbg"
+        android:orientation="vertical" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_bar_bg" >
+
+                 <ImageView
+		            android:id="@+id/iv_logo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="8dp"
+		            android:layout_marginRight="8dp"
+		            android:src="@drawable/logo_yunpan_home" />
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@id/iv_logo"
+		            android:text="@string/tv_vechicle_check"
+		            android:textColor="@color/white" />
+		            <Button
+		            android:id="@+id/send"
+		            android:layout_width="wrap_content"
+		            android:layout_height="30dp"
+		            android:clickable="true"
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="8dp"
+		            android:text="上报"
+		            android:textColor="@android:color/white"
+		            android:background="@drawable/btn_male_bg" />
+            </RelativeLayout>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:text="机动车查验照片"
+                android:textColor="#ff383838" />
+            
+		     <RelativeLayout
+                	android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:orientation="vertical">
+             
+             <!-- <GridView
+                 android:id="@+id/grid"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10.0dip"
+                 android:layout_marginRight="10.0dip"
+                 android:layout_marginTop="10.0dip"
+                 android:gravity="center"
+                 android:scrollbars="vertical"
+                 android:numColumns="3" /> -->
+             
+             <GridView android:id="@+id/grid"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="10dp"
+		        android:numColumns="4"
+		        android:gravity="center"
+		        android:cacheColorHint="@android:color/transparent"
+		        android:listSelector="@android:color/transparent"
+		        android:horizontalSpacing="5dp"
+		        android:verticalSpacing="5dp"
+		        android:scrollbars="none"
+		        />
+            
+             </RelativeLayout>
+    </LinearLayout>
+

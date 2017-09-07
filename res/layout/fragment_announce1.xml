@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="公告编号"/>
+        <TextView
+            android:id="@+id/tv_bh"
+            style="@style/gonggao_textview2"
+            android:text="公告编号"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="车辆企业名称"/>
+        <TextView
+            android:id="@+id/tv_qyid"
+            style="@style/gonggao_textview2"
+            android:text="车辆企业名称"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="中文品牌"/>
+        <TextView
+            android:id="@+id/tv_clpp1"
+            style="@style/gonggao_textview2"
+            android:text="中文品牌"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="英文品牌"/>
+        <TextView
+            android:id="@+id/tv_clpp2"
+            style="@style/gonggao_textview2"
+            android:text="--"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="车辆型号"/>
+        <TextView
+            android:id="@+id/tv_clxh"
+            style="@style/gonggao_textview2"
+            android:text="车辆型号"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="制造国"/>
+        <TextView
+            android:id="@+id/tv_zzg"
+            style="@style/gonggao_textview2"
+            android:text="中国"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="合格证发动机号"/>
+        <TextView
+            android:id="@+id/tv_fdjh"
+            style="@style/gonggao_textview2"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="发动机号"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="发动机型号"/>
+        <TextView
+            android:id="@+id/tv_fdjxh"
+            style="@style/gonggao_textview2"
+            android:text="发动机型号"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout"
+        android:layout_height="60dp">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="识别代号序列"/>
+        <TextView
+            android:id="@+id/tv_sbdhxl"
+            style="@style/gonggao_textview2"
+            android:text="识别代号序列"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="燃料种类"/>
+        <TextView
+            android:id="@+id/tv_rlzl"
+            style="@style/gonggao_textview2"
+            android:text="燃料种类"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="转向形式"/>
+        <TextView
+            android:id="@+id/tv_zxxs"
+            style="@style/gonggao_textview2"
+            android:text="转向形式"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" >
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="排量/功率"/>
+        <TextView
+            android:id="@+id/tv_plgl"
+            style="@style/gonggao_textview2"
+            android:text="-- ml  -- kw"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/gonggao_linearlayout" 
+        android:layout_height="50dp">
+        <TextView
+            style="@style/gonggao_textview1"
+            android:text="外廓尺寸"/>
+        <TextView
+            android:id="@+id/tv_cwkc"
+            style="@style/gonggao_textview2"
+            android:text="-- mm(长)  -- mm(宽)  --,-- mm(高)"
+             />
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="服务器设置">	
+ 	<EditTextPreference android:key="ip_edit_preference"
+		android:title="服务器IP地址"
+		android:summary=""
+		android:defaultValue="192.168.1.101"
+		android:dialogTitle="服务器ip地址">
+	</EditTextPreference>
+	 	
+	 <EditTextPreference android:key="port_edit_preference"
+		android:title="服务器IP端口"
+		android:summary=""
+		android:defaultValue="8080"
+		android:dialogTitle="服务器ip端口">
+	</EditTextPreference>
+	</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="checkstation">        
+     <item>滨海县汽车综合性能检测站</item>            
+     <item>大丰市汇鑫机动车辆综合性能检测站</item>
+     <item>大丰市蓝盾机动车检测站</item>  
+     <item>东台市安东检测中心</item>
+     <item>阜宁县机动车辆检测中心</item>            
+     <item>建湖县通安汽车综合性能检测站</item>            
+     <item>建湖县维宁保安服务有限公司机动车检测站</item>
+     <item>射阳县通安机动车安全检测站</item>
+     <item>响水县汽车综合性能检测站</item>            
+     <item>盐城大吉机动车辆检测站</item>            
+     <item>盐城市车辆综合性能检测站</item>
+     <item>盐城市流动检测线</item>  
+     <item>盐城市通安机动车检测站</item>            
+  	</string-array>
+  	
+     <string-array name="checkstation_code">        
+     <item>3200000093</item>            
+     <item>3200000097</item>
+     <item>3200000098</item> 
+     <item>3200000099</item> 
+     <item>3200000094</item> 
+     <item>3200000001</item>
+     <item>3200000108</item> 
+     <item>3200000095</item> 
+     <item>3200000090</item> 
+     <item>3200000096</item> 
+     <item>3200000089</item> 
+     <item>3200000112</item> 
+     <item>3200000057</item> 
+  	</string-array>
+  	
+     <string-array name="remarks">        
+     <item>安全装置符合要求</item>            
+     <item>加装副刹车</item>
+     <item>加装辅助装置</item>  
+  	</string-array>
+     
+     
+     <string-array name="applyunits">        
+     <item>车管所(服务站)专用</item>            
+     <item>检测线专用</item>
+  	</string-array>
+     
+</resources>
